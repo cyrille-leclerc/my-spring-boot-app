@@ -7,6 +7,8 @@
     <version>0.0.8-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+
+
     <name>my-spring-boot-app</name>
     <description>Demo project for Spring Boot</description>
 
