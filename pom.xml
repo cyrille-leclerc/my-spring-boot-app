@@ -60,12 +60,12 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>nexus.beesshop.org</id>
-            <url>http://nexus.beesshop.org/content/repositories/snapshots</url>
+            <id>nexus.beescloud.com</id>
+            <url>https://nexus.beescloud.com/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
-            <id>nexus.beesshop.org</id>
-            <url>http://nexus.beesshop.org/content/repositories/releases</url>
+            <id>nexus.beescloud.com</id>
+            <url>https://nexus.beescloud.com/content/repositories/releases</url>
         </repository>
     </distributionManagement>
 </project>
