@@ -4,7 +4,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>my-spring-boot-app</artifactId>
-    <version>0.0.12-SNAPSHOT</version>
+    <version>0.0.12</version>
     <packaging>jar</packaging>
 
 
@@ -22,7 +22,7 @@
     <scm>
         <connection>scm:git:https://github.com/cyrille-leclerc/my-spring-boot-app.git</connection>
         <url>https://github.com/cyrille-leclerc/my-spring-boot-app</url>
-      <tag>HEAD</tag>
+      <tag>my-spring-boot-app-0.0.12</tag>
   </scm>
 
     <properties>
