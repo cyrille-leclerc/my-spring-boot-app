@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image "openjdk:8-jdk"
+            image "maven:3-jdk-8"
         }
     }
     stages {
@@ -10,7 +10,7 @@ pipeline {
                 withMaven(
                     mavenSettingsConfig: 'maven-settings-for-my-spring-boot-app') {
 
-                    sh "./mvnw clean deploy"
+                    sh "mvn clean deploy"
                 }
             }
         }
