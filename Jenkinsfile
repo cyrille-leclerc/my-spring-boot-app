@@ -11,7 +11,7 @@ pipeline {
                     maven: 'M3',
                     mavenSettingsConfig: 'maven-settings-for-my-spring-boot-app') {
 
-                    sh "mvn clean deploy"
+                    sh "./mvnw clean deploy"
                 }
             }
         }
