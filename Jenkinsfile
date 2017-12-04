@@ -8,7 +8,6 @@ pipeline {
         stage('Build and Deploy') {
             steps {
                 withMaven(
-                    maven: 'M3',
                     mavenSettingsConfig: 'maven-settings-for-my-spring-boot-app') {
 
                     sh "./mvnw clean deploy"
