@@ -12,6 +12,7 @@ pipeline {
                     mavenSettingsConfig: 'maven-settings-for-my-spring-boot-app') {
 
                     sh "mvn clean deploy"
+                }
             }
         }
     }
