@@ -1,15 +1,10 @@
 pipeline {
-    agent {
-        docker {
-            image "maven:3-jdk-8"
-        }
-    }
+    agent any
     stages {
         stage('Build and Deploy') {
             steps {
-                withMaven(
+                withMaven(maven: "maven-3.5",
                     mavenSettingsConfig: 'maven-settings-for-my-spring-boot-app') {
-
                     sh "mvn clean deploy"
                 }
             }
