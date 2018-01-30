@@ -5,7 +5,9 @@ pipeline {
             steps {
                 withMaven(maven: "maven-3.5",
                     mavenSettingsConfig: 'maven-settings-for-my-spring-boot-app') {
-                    sh "mvn clean deploy"
+                    sh "mvn -DskipTest clean deploy"
+
+                    sh "mvn sonar:sonar"
                 }
             }
         }
