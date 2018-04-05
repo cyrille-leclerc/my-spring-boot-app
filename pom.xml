@@ -10,9 +10,10 @@
    <parent>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-parent</artifactId>
-      <version>1.5.4.RELEASE</version>
-      <relativePath />
+      <version>2.0.0.RELEASE</version>
+      <relativePath/> <!-- lookup parent from repository -->
    </parent>
+
    <scm>
       <connection>scm:git:https://github.com/cyrille-leclerc/my-spring-boot-app.git</connection>
       <url>https://github.com/cyrille-leclerc/my-spring-boot-app</url>
@@ -24,6 +25,10 @@
       <project.scm.id>github</project.scm.id>
    </properties>
    <dependencies>
+      <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-actuator</artifactId>
+      </dependency>
       <dependency>
          <groupId>org.springframework.boot</groupId>
          <artifactId>spring-boot-starter-web</artifactId>
@@ -45,23 +50,6 @@
             <artifactId>maven-release-plugin</artifactId>
             <version>2.5.3</version>
          </plugin>
-         <!--
-         <plugin>
-            <groupId>io.fabric8</groupId>
-            <artifactId>fabric8-maven-plugin</artifactId>
-            <version>3.5.33</version>
-            <executions>
-               <execution>
-                  <id>fmp</id>
-                  <goals>
-                     <goal>resource</goal>
-                     <goal>helm</goal>
-                     <goal>build</goal>
-                  </goals>
-               </execution>
-            </executions>
-         </plugin>
-         -->
       </plugins>
    </build>
    <distributionManagement>
