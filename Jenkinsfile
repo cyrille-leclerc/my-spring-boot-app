@@ -3,11 +3,8 @@ pipeline {
     stages {
         stage('Build and Deploy') {
             steps {
-                withMaven(maven: "maven-3.5",
-                    mavenSettingsConfig: 'maven-settings-for-my-spring-boot-app') {
-                    sh "mvn -DskipTest clean deploy"
-
-                    sh "mvn sonar:sonar"
+                withMaven() {
+                    sh "./mvnw clean deploy"
                 }
             }
         }
