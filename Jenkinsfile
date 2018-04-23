@@ -3,9 +3,7 @@
 node {
     checkout scm
     stage('Build and Deploy') {
-        withMaven(
-            maven: 'M3', 
-            mavenSettingsConfig: 'maven-settings-for-my-spring-boot-app') {
+        withMaven() {
             sh "mvn clean deploy"
         }
     }
